@@ -151,8 +151,8 @@ plt.legend()
 plt.title("Validation loss for different learning rates")
 plt.savefig("q8_learning_rates.png", dpi=150, bbox_inches="tight")
 
-# experiment 4: final run on the full data 
-BEST_LR = None      
+
+BEST_LR = 0.03   
 
 if BEST_LR is None:
     print("\nExperiments 1 to 3 are done. Look at the table and the plots,")
