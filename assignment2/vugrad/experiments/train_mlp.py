@@ -33,6 +33,8 @@ parser.add_argument('-l', '--learning-rate',
 
 args = parser.parse_args()
 
+np.random.seed(42)  #added this line to make sure the results are reproducible. 
+
 ## Load the data
 if args.data == 'synth':
     (xtrain, ytrain), (xval, yval), num_classes = vg.load_synth()
